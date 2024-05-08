@@ -1,0 +1,22 @@
+.second {
+    width: 298px;
+    height: 156px;
+    margin-top: 10px;
+    background-color: var(--bg-div);
+    border-radius: 8px;
+}
+
+.color-icon {
+    color: var(--color-text);
+}
+
+.second .biblioteca {
+    display: flex;
+    align-items: center;
+    color: var(--color-text);
+}
+
+.second .biblioteca:hover,
+.color-icon:hover {
+    color: #fff;
+}

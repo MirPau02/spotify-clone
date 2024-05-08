@@ -1,0 +1,35 @@
+.first {
+    width: 298px;
+    height: 156px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--bg-div);
+    border-radius: 8px;
+}
+
+.first .logo,
+.first .inicio,
+.first .buscar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--color-text);
+    padding: 10px;
+    padding-left: 20px;
+    /* margin-left: 10px; */
+}
+
+.first .logo p,
+.first .inicio p,
+.first .buscar p {
+    font-size: 18px;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.first .logo:hover,
+.first .inicio:hover,
+.first .buscar:hover {
+    color: #fff;
+}
