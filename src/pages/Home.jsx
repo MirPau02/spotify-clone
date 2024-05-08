@@ -1,6 +1,7 @@
 import React from 'react'
 import First from './First.jsx';
 import Second from './Second.jsx';
+import Content from './Content.jsx';
 
 const Home = () => {
   return (
@@ -10,7 +11,7 @@ const Home = () => {
         <Second />
       </div>
       <div className="derecha">
-        
+        <Content />
       </div>
     </div>
   )

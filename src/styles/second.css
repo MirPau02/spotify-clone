@@ -1,6 +1,6 @@
 .second {
     width: 298px;
-    height: 156px;
+    height: 100%;
     margin-top: 10px;
     background-color: var(--bg-div);
     border-radius: 8px;
