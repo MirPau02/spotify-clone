@@ -22,4 +22,9 @@
     height: 433px;
     background-color: #1f1f1f;
     border-radius: 8px;
+    display: flex;
+}
+
+.with-scroll {
+    overflow-y: scroll;
 }

@@ -40,7 +40,10 @@ const Content = () => {
                 </div>
             </div>
             <div className="section">
-                <Cantante />
+                <div className="with-scroll">
+                    <Cantante />
+                    <Cantante />
+                </div>
             </div>
         </div>
     )
