@@ -1,0 +1,28 @@
+
+.cantante .titulo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cantante h2 {
+    margin: 0;
+    padding: 10px;
+}
+
+.cantante h2:hover {
+    text-decoration: underline;
+}
+
+.cantante .titulo p {
+    margin-right: 20px;
+    color: var(--color-text);
+}
+
+.cantante .titulo p:hover {
+    text-decoration: underline;
+}
+
+.cantante .singer {
+    padding-left: 10px;
+}

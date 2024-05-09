@@ -1,4 +1,5 @@
 import React from 'react'
+import Cantante from './Cantante.jsx'
 import { Tooltip, IconButton, Button } from '@mui/material';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
@@ -9,11 +10,11 @@ const Content = () => {
         <div className='container'>
             <div className="navbar">
                 <div className="icons">
-                    <IconButton style={{ backgroundColor: 'black', marginRight: '10px', marginLeft: '10px' }} aria-label="delete">
-                        <KeyboardArrowLeftIcon style={{ color: 'white' }} />
+                    <IconButton sx={{ backgroundColor: '#0a0a0a', marginRight: '10px', marginLeft: '10px', '&:hover': { background: '#0a0a0a' } }} aria-label="delete">
+                        <KeyboardArrowLeftIcon sx={{ color: '#B3B3B3' }} />
                     </IconButton>
-                    <IconButton style={{ backgroundColor: 'black' }} aria-label="delete">
-                        <KeyboardArrowRightIcon style={{ color: 'white' }} />
+                    <IconButton sx={{ backgroundColor: '#0a0a0a', '&:hover': { background: '#0a0a0a' } }} aria-label="delete">
+                        <KeyboardArrowRightIcon sx={{ color: '#B3B3B3' }} />
                     </IconButton>
                 </div>
                 <div className="login">
@@ -31,7 +32,7 @@ const Content = () => {
                             marginRight: '20px',
                             marginLeft: '10px',
                             '&:hover': {
-                                background: '#B3B3B3' // Cambia a tu color de fondo deseado
+                                background: '#B3B3B3'
                             }
                         }}>
                         Iniciar sesión
@@ -39,7 +40,7 @@ const Content = () => {
                 </div>
             </div>
             <div className="section">
-
+                <Cantante />
             </div>
         </div>
     )
