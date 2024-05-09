@@ -12,6 +12,7 @@
 .bg-home {
   background-color: var(--bg-all);
   color: white;
+  width: auto;
 }
 
 .home {
