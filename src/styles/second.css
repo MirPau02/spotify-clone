@@ -1,7 +1,8 @@
 .second {
-    width: 298px;
+    min-width: 298px;
+    max-width: 298px;
     height: 100%;
-    margin-top: 10px;
+    margin-top: 8px;
     background-color: var(--bg-div);
     border-radius: 8px;
 }
@@ -14,9 +15,54 @@
     display: flex;
     align-items: center;
     color: var(--color-text);
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.second .biblioteca .prueba {
+    display: flex;
+    align-items: center;
+}
+
+.second .biblioteca span {
+    margin-left: 20px;
+    margin-right: 60px;
+    font-weight: 700;
 }
 
 .second .biblioteca:hover,
 .color-icon:hover {
     color: #fff;
+}
+
+.bg-icon {
+    background-color: "";
+}
+.bg-icon:hover {
+    background-color: #1a1a1a;
+}
+
+.button-global-spain {
+    display: flex;
+    justify-content: center;
+}
+
+.button-spain {
+    display: flex;
+    width: 160.95px;
+    height: 32px;
+    border-radius: 25%;
+}
+
+.button-spain:hover {
+    width: 161.95px;
+    height: 33px;
+}
+
+.button-spain p {
+    font-size: 10px;
+}
+
+.global-icon {
+    display: flex;
 }

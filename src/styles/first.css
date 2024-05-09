@@ -1,6 +1,8 @@
 .first {
-    width: 298px;
-    height: 156px;
+    min-width: 298px;
+    max-width: 298px;
+    min-height: 156px;
+    max-height: 156px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -17,15 +19,14 @@
     color: var(--color-text);
     padding: 10px;
     padding-left: 20px;
-    /* margin-left: 10px; */
 }
 
-.first .logo p,
-.first .inicio p,
-.first .buscar p {
-    font-size: 18px;
+.first .logo span,
+.first .inicio span,
+.first .buscar span {
     margin: 0;
     margin-left: 20px;
+    font-weight: 700;
 }
 
 .first .logo:hover,

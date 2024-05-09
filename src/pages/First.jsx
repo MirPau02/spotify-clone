@@ -11,15 +11,15 @@ const First = () => {
             <div className='logo'>
                 {/* <img src={logo} alt='prueba' /> */}
                 <CottageOutlinedIcon />
-                <p>Spotify</p>
+                <span title='Spotify' >Spotify</span>
             </div>
             <div className="inicio">
                 <CottageOutlinedIcon />
-                <p>Inicio</p>
+                <span>Inicio</span>
             </div>
             <div className="buscar">
                 <SearchOutlinedIcon />
-                <p>Buscar</p>
+                <span>Buscar</span>
             </div>
         </div>
     )
