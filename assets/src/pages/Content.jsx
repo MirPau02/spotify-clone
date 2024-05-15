@@ -30,7 +30,9 @@ const Content = () => {
               '&:hover': {
                 color: '#fff'
               }
-            }}>
+            }}
+            onClick={() => navigate('/register')}
+          >
             Registrarse
           </Button>
           <Button

@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         // Aquí puedes definir tus colores personalizados
         'custom-text': '#1ed760',
+        'color-text': '#A7A7A7'
       },
     },
   },

@@ -14,7 +14,7 @@
 .login .containerLogin .formularioLogin {
     min-width: 734px;
     max-width: 734px;
-    min-height: 958px;
+    /* min-height: 958px; */
     max-height: 958px;
     background-color: #121212;
 }
@@ -43,12 +43,28 @@
     color: rgb(167, 167, 167);
 }
 
-.prueba:hover {
-    cursor: pointer;
-}
 
 .imagen {
     width: 117px;
     min-height: 100px;
     margin-top: -20px;
+}
+
+.container-password,
+.container-email {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.password,
+.email {
+    min-width: 324px;
+    max-width: 324px;
+}
+
+.password p,
+.email p {
+    text-align: left;
+    padding-bottom: 2px;
 }
