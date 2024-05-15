@@ -1,0 +1,6 @@
+# config/routes.yaml
+index:
+  path: /{reactRouting}
+  controller: App\Controller\DefaultController::index
+  requirements:
+    reactRouting: .*

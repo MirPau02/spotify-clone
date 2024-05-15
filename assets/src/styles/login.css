@@ -1,0 +1,54 @@
+.login .navbarLogin {
+    width: 100%;
+    min-height: 100px;
+    max-height: 100px;
+    padding: 32px 0px 32px 51px;
+    background-color: #121212;
+}
+
+.login .containerLogin {
+    background: linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgb(0, 0, 0) 100%);
+    min-height: 100%;
+}
+
+.login .containerLogin .formularioLogin {
+    min-width: 734px;
+    max-width: 734px;
+    min-height: 958px;
+    max-height: 958px;
+    background-color: #121212;
+}
+
+.login .containerLogin .formularioLogin .header {
+    /* padding: 32px 0; */
+    color: white;
+}
+
+.login .containerLogin .formularioLogin .header h1 {
+    width: 100%;
+    margin: 48px 0;
+    text-align: center;
+    font-size: 32px;
+}
+
+.login .footerLogin {
+    width: 100%;
+    min-height: 81px;
+    max-height: 81px;
+    background-color: #121212;
+}
+
+.login .footerLogin p {
+    font-size: 0.75rem;
+    color: rgb(167, 167, 167);
+}
+
+.prueba:hover {
+    cursor: pointer;
+}
+
+.imagen {
+    width: 117px;
+    min-height: 100px;
+    margin-top: -20px;
+}
