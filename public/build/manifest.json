@@ -2,17 +2,8 @@
   "build/react-app.css": "/build/react-app.css",
   "build/react-app.js": "/build/react-app.js",
   "build/runtime.js": "/build/runtime.js",
-  "build/vendors-node_modules_mui_icons-material_Add_js-node_modules_mui_icons-material_CottageOutline-804ce6.js": "/build/vendors-node_modules_mui_icons-material_Add_js-node_modules_mui_icons-material_CottageOutline-804ce6.js",
-  "build/images/logo192.png": "/build/images/logo192.64b6abdb.png",
-  "build/images/spotify.png": "/build/images/spotify.eb08e09d.png",
-  "build/vendors-node_modules_mui_icons-material_Add_js-node_modules_mui_icons-material_CottageOutline-6aa2ff.js": "/build/vendors-node_modules_mui_icons-material_Add_js-node_modules_mui_icons-material_CottageOutline-6aa2ff.js",
-  "build/vendors-node_modules_mui_icons-material_Add_js-node_modules_mui_icons-material_CottageOutline-f907dd.js": "/build/vendors-node_modules_mui_icons-material_Add_js-node_modules_mui_icons-material_CottageOutline-f907dd.js",
-  "build/vendors-node_modules_mui_icons-material_Add_js-node_modules_mui_icons-material_CottageOutline-c7b305.js": "/build/vendors-node_modules_mui_icons-material_Add_js-node_modules_mui_icons-material_CottageOutline-c7b305.js",
-  "build/vendors-node_modules_mui_icons-material_Add_js-node_modules_mui_icons-material_CottageOutline-69a144.js": "/build/vendors-node_modules_mui_icons-material_Add_js-node_modules_mui_icons-material_CottageOutline-69a144.js",
-  "build/vendors-node_modules_mui_icons-material_Add_js-node_modules_mui_icons-material_CottageOutline-3e2a1a.js": "/build/vendors-node_modules_mui_icons-material_Add_js-node_modules_mui_icons-material_CottageOutline-3e2a1a.js",
-  "build/vendors-node_modules_mui_icons-material_Add_js-node_modules_mui_icons-material_CottageOutline-df49fd.js": "/build/vendors-node_modules_mui_icons-material_Add_js-node_modules_mui_icons-material_CottageOutline-df49fd.js",
-  "build/vendors-node_modules_mui_icons-material_Add_js-node_modules_mui_icons-material_CottageOutline-2d75e0.js": "/build/vendors-node_modules_mui_icons-material_Add_js-node_modules_mui_icons-material_CottageOutline-2d75e0.js",
-  "build/vendors-node_modules_mui_icons-material_Add_js-node_modules_mui_icons-material_CottageOutline-b14052.js": "/build/vendors-node_modules_mui_icons-material_Add_js-node_modules_mui_icons-material_CottageOutline-b14052.js",
   "build/vendors-node_modules_mui_icons-material_Add_js-node_modules_mui_icons-material_CottageOutline-025214.js": "/build/vendors-node_modules_mui_icons-material_Add_js-node_modules_mui_icons-material_CottageOutline-025214.js",
-  "build/images/logo.png": "/build/images/logo.a4abf7fc.png"
+  "build/images/logo.png": "/build/images/logo.a4abf7fc.png",
+  "build/images/logo192.png": "/build/images/logo192.64b6abdb.png",
+  "build/images/spotify.png": "/build/images/spotify.eb08e09d.png"
 }
