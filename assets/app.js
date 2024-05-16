@@ -6,7 +6,7 @@ import './styles/app.css';
 
 function App() {
     return (
-        <div>
+        <div className='montserrat'>
             <BrowserRouter>
                 <Router />
             </BrowserRouter>

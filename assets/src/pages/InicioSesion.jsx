@@ -5,12 +5,13 @@ import { Divider, Button, TextField, Switch, InputAdornment, IconButton } from '
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import GoogleIcon from '@mui/icons-material/Google';
+import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
 import logo from '../img/logo.png';
 
 const Login = () => {
 
     const emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g;
-    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()\-_=+\\\|\[\]{};:\'",.<>/?]).{8,}$/;
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()\-_=+\\\|\[\]{};:\'",.<>/?]).{5,}$/;
 
     const [showPassword, setShowPassword] = useState(false);
     const [errors, setErrors] = useState([]);
@@ -44,7 +45,7 @@ const Login = () => {
         }
 
         if (!passwordRegex.test(formValues.password)) {
-            totalErrors.push({ type: 'password', message: 'La contraseña debe contener todo' });
+            totalErrors.push({ type: 'password', message: 'La contraseña debe tener minúscula, mayúscula, número y un carácter o más de 5 carácteres' });
             hasError = true;
         }
 
@@ -152,9 +153,9 @@ const Login = () => {
                                         placeholder='Correo electrónico o nombre de usuario'
                                         variant="outlined"
                                         InputProps={{
-                                            style: { color: 'white', borderColor: 'white' },
+                                            style: { color: 'white' },
                                             classes: {
-                                                notchedOutline: 'white-border'
+                                                notchedOutline: errors.some(error => error.type === "email") ? 'error-border' : 'white-border',
                                             }
                                         }}
                                         InputLabelProps={{
@@ -164,14 +165,14 @@ const Login = () => {
                                             width: '324px',
                                             '& .MuiOutlinedInput-root': {
                                                 '& fieldset': {
-                                                    borderColor: 'white',
+                                                    borderColor: errors.some(error => error.type === "email") ? 'red' : 'white',
                                                 },
                                                 '&:hover fieldset': {
-                                                    borderColor: 'white',
-                                                    border: '2px solid white'
+                                                    borderColor: errors.some(error => error.type === "email") ? 'red' : 'white',
+                                                    border: errors.some(error => error.type === "email") ? '1px solid red' : '2px solid white',
                                                 },
                                                 '&.Mui-focused fieldset': {
-                                                    borderColor: 'white'
+                                                    borderColor: errors.some(error => error.type === "email") ? 'red' : 'white',
                                                 },
                                             },
                                             input: {
@@ -184,6 +185,7 @@ const Login = () => {
                                     />
                                     {(errors.length > 0 && errors.find(error => error.type === "email")) && (
                                         <div className='text-red-700 text-xs text-left'>
+                                            <ErrorOutlineIcon style={{ fontSize: '12px', marginRight: '5px' }} />
                                             {errors.find(error => error.type === "email").message}
                                         </div>
                                     )}
@@ -201,7 +203,7 @@ const Login = () => {
                                         onChange={handleChange}
                                         type={showPassword ? 'text' : 'password'}
                                         InputProps={{
-                                            style: { color: 'white', borderColor: 'white' },
+                                            style: { color: 'white' },
                                             endAdornment: (
                                                 <InputAdornment position="end">
                                                     <IconButton
@@ -214,7 +216,7 @@ const Login = () => {
                                                 </InputAdornment>
                                             ),
                                             classes: {
-                                                notchedOutline: 'white-border'
+                                                notchedOutline: errors.some(error => error.type === "password") ? 'error-border' : 'white-border',
                                             }
                                         }}
                                         InputLabelProps={{
@@ -224,14 +226,14 @@ const Login = () => {
                                             width: '324px',
                                             '& .MuiOutlinedInput-root': {
                                                 '& fieldset': {
-                                                    borderColor: 'white',
+                                                    borderColor: errors.some(error => error.type === "password") ? 'red' : 'white',
                                                 },
                                                 '&:hover fieldset': {
-                                                    borderColor: 'white',
-                                                    border: '2px solid white'
+                                                    borderColor: errors.some(error => error.type === "password") ? 'red' : 'white',
+                                                    border: errors.some(error => error.type === "password") ? '1px solid red' : '2px solid white',
                                                 },
                                                 '&.Mui-focused fieldset': {
-                                                    borderColor: 'white',
+                                                    borderColor: errors.some(error => error.type === "password") ? 'red' : 'white',
                                                 },
                                             },
                                             input: {
@@ -243,7 +245,8 @@ const Login = () => {
                                         }}
                                     />
                                     {(errors.length > 0 && errors.find(error => error.type === "password")) && (
-                                        <div className='text-red-700 text-xs text-left'>
+                                        <div className='text-red-700 text-xs text-left flex items-center'>
+                                            <ErrorOutlineIcon style={{ fontSize: '12px', marginRight: '5px' }} />
                                             {errors.find(error => error.type === "password").message}
                                         </div>
                                     )}
